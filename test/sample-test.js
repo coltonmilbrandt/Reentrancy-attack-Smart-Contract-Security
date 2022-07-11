@@ -50,7 +50,7 @@ describe("Deploy contracts", function () {
       console.log(`Attackers's balance: ${ethers.utils.formatEther(await ethers.provider.getBalance(attacker.address)).toString()}`);
       console.log("");
 
-      expect(await ethers.provider.getBalance(this.bankContract.address)).to.eq(0);
+      expect(await ethers.provider.getBalance(this.bankContract.address)).to.eq();
     });
   });
 });
